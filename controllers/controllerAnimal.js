@@ -10,6 +10,17 @@ const getAnimal = async (req, res) => {
 
 }
 
+const getAnimalId = async (req, res) => {
+
+    const { id } = req.params;
+    const sql = `select * from tbl_animal where id = $1`;
+    
+    const result = await db.query(sql, [id] );
+
+    return res.json(result);
+
+}
+
 const postAnimal = async (req, res) => {
 
     const { name, sonido } = req.body;
@@ -58,5 +69,6 @@ export {
     getAnimal,
     postAnimal,
     putAnimal,
-    deleteAnimal
+    deleteAnimal, 
+    getAnimalId
 }
