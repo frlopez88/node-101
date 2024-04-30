@@ -7,3 +7,11 @@ Clase #2 24/04/2024
 2) Controladores 
 3) libreria pg
 4) web service ya conectado a la base de datos
+
+
+Clase 29/04/2024
+
+1) Repaso de todo lo previo 
+2) Metodo GET con Parametro id
+3) Conocer las Variables 
+
