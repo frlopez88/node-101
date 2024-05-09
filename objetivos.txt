@@ -13,5 +13,6 @@ Clase 29/04/2024
 
 1) Repaso de todo lo previo 
 2) Metodo GET con Parametro id
-3) Conocer las Variables 
+3) Conocer las Variables de Entorno 
+4) Get con tablas cruzadas (Inner Joins)
 
