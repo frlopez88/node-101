@@ -4,10 +4,15 @@ const app = express();
 import { animal } from './routes/routeAnimal.js';
 import { comida } from './routes/routeComida.js';
 import { comidaFavorita } from './routes/routeComidaFavorita.js';
+import cors from 'cors';
 
 // MiddleWare
 
 app.use(express.json());
+
+app.use( cors() );
+
+// Routes
 
 app.use('/animal', animal)
 app.use('/comida', comida)

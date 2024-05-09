@@ -23,9 +23,9 @@ const getAnimalId = async (req, res) => {
 
 const postAnimal = async (req, res) => {
 
-    const { name, sonido } = req.body;
+    const { nombre, sonido } = req.body;
 
-    const data = [name, sonido]
+    const data = [nombre, sonido]
 
     const sql = ` insert into tbl_animal 
                  ( nombre, sonido)
